@@ -1,0 +1,144 @@
+body{
+    margin: 0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(51, 51, 227);
+    border-bottom: red solid 4px;
+    font-size: 15px;
+    padding: 0 50px;
+}
+.header nav{
+    display: flex;
+    gap: 20px;
+}
+nav a{color: white;
+       text-decoration: none;}
+nav a:visited{color: white;}
+nav a:hover{color: red;}
+.header span{
+    color: red;
+}
+#section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    background-image: url("Webimg/marvin-meyer-SYTO3xs06fU-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: white;
+}
+#section p{
+    text-align: center;
+    padding: 10px;
+    font-size: 18px;
+}
+.sub{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    border: blue solid 2px;
+    background-color: rgb(51, 51, 227);
+    color: white;
+    padding: 0 100px;
+    font-size: 20px;
+}
+.sub button{
+    border-radius: 0%;
+    width: 80px;
+    height: 30px;
+    background-color: red;
+    color: white;
+    border: none;
+}
+.sub input[type="email"]{
+    height: 23px;
+}
+#main1{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+#main1 div{
+    padding: 20px;
+}
+footer{
+    text-align: center;
+    background-color: rgb(51, 51, 227) ;
+    color: white;
+    padding: 2.5%;
+}
+#main2{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    gap: 30px;
+}
+#main2 #wwd{
+    background-color: grey;
+    height: fit-content;
+    padding: 20px;
+    margin-bottom: 30%;
+}
+section{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+#Article{
+    width: 60%;
+}
+#admission{
+           background-color: rgb(114, 114, 114);
+           margin-top: 5%;
+           margin-bottom: 40%;
+           padding: 2%;
+           color: white;
+}
+.col{
+    background-color: rgb(219, 217, 217);
+    border: grey solid 1px;
+    margin-bottom: 1%;
+    padding: 5%;
+}
+#admission ul{
+    list-style: none;
+}
+#admission button{
+     border-radius: 0%;
+    width: 80px;
+    height: 30px;
+    background-color: red;
+    color: white;
+    border: none;
+}
+@media(max-width: 786px){
+    .header{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .sub{
+        flex-direction: column;
+        text-align: center;
+        padding: 2%;
+    }
+    #main1{
+        flex-direction: column;
+    }
+    #section{
+        text-align: center;
+    }
+    #main2{
+        flex-direction: column;
+    }
+    section{
+        flex-direction: column;
+        align-items: center;
+    }
+}
