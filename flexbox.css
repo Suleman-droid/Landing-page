@@ -118,10 +118,16 @@ section{
     color: white;
     border: none;
 }
-@media(max-width: 786px){
+@media(max-width: 834px){
     .header{
         flex-direction: column;
         gap: 10px;
+    }
+    .header h1{
+        text-align: center;
+    }
+    .header nav{
+        padding: 5%;
     }
     .sub{
         flex-direction: column;
